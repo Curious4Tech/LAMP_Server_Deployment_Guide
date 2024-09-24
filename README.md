@@ -21,7 +21,7 @@ sudo apt-get upgrade
 Install the Apache web server package:
 
 ```bash
-sudo apt-get install apache2
+sudo apt-get install apache2 -y
 ```
 
 Once the installation is complete, you can verify that Apache is running by visiting `http://your-server-ip` in a web browser. You should see the default Apache welcome page.
@@ -36,12 +36,18 @@ sudo apt-get install mysql-server
 
 During the installation, you will be prompted to set a root password for the MySQL server. Make sure to choose a strong, secure password.
 
+After the installation, secure your MySQL installation:
+```bash
+sudo mysql_secure_installation
+``
+This script will prompt you to set a root password, remove anonymous users, disable remote root login, and remove the test database.
+
 ## Step 4: Install PHP
 
 Install the PHP package and related modules:
 
 ```bash
-sudo apt-get install php libapache2-mod-php php-mysql
+sudo apt-get install php libapache2-mod-php php-mysql -y
 ```
 
 This will install PHP and the necessary modules to integrate PHP with Apache and MySQL.
