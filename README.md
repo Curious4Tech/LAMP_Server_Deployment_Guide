@@ -37,22 +37,18 @@ sudo apt-get install mysql-server
 During the installation, you will be prompted to set a root password for the MySQL server. Make sure to choose a strong, secure password.
 
 After the installation, secure your MySQL installation:
-<<<<<<< HEAD
 
 ```bash
 sudo mysql_secure_installation
-``
+```
 
 This script will prompt you to set a root password, remove anonymous users, disable remote root login, and remove the test database.
 
-
-=======
 ```bash
 sudo mysql_secure_installation
-``
+```
 This script will prompt you to set a root password, remove anonymous users, disable remote root login, and remove the test database.
 
->>>>>>> 0f46ba2226bdd89a017b26f4cb4b7d0dbe142b9c
 ## Step 4: Install PHP
 
 Install the PHP package and related modules:
